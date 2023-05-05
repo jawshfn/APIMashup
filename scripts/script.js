@@ -21,7 +21,18 @@ searchButton.addEventListener("click", () => {
         searchVideoGames(gameSearchQuery);
     }
 });
-
+gameSearchInput.addEventListener("keypress", (event) => {
+    if(event.key === "Enter") {
+        event.preventDefault();
+        searchButton.click();
+    }
+});
+locationInput.addEventListener("keypress", (event) => {
+    if(event.key === "Enter") {
+        event.preventDefault();
+        searchButton.click();
+    }
+});
 // Fetch weather data from OpenWeatherMap API
 async function getWeatherForecast(location) {
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${openWeatherMapApiKey}`;
