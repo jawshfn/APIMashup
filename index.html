@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Weather and Video Game Night Planner</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Video Game Search and Weather Forecast Mashup</h1>
+        </header>
+        <main>
+            <section id="search-section">
+                <h2>Search</h2>
+                <div class="search-container">
+                    <div class="search-input">
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" placeholder="Enter your location">
+                    </div>
+                    <div class="search-input">
+                        <label for="game-search">Video Game:</label>
+                        <input type="text" id="game-search" placeholder="Search for a video game">
+                    </div>
+                    <button id="search-button">Search</button>
+                </div>
+            </section>
+            <section id="weather-results">
+                <h2>Weather Forecast</h2>
+                <div id="weather-container">
+                    <!--Weather info displayerd here-->
+                </div>
+            </section>
+            <section id="game-results">
+                <h2>Video Game Results</h2>
+                <div id="game-container">
+                    <!--Video game search results here-->
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
